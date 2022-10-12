@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kengic.Opns", "Kengic.Opns\Kengic.Opns.csproj", "{EA72143D-2A67-4C67-B73B-540596706379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kengic.Opns.Database", "Kengic.Opns.Database\Kengic.Opns.Database.csproj", "{43FE55D8-0453-4EEA-BCDD-21CFF2F3D610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kengic.Opns.UI", "Kengic.Opns.UI\Kengic.Opns.UI.csproj", "{6C7F0B75-6ED2-4FCB-BCA6-FCDACD6ED405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA72143D-2A67-4C67-B73B-540596706379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA72143D-2A67-4C67-B73B-540596706379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA72143D-2A67-4C67-B73B-540596706379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA72143D-2A67-4C67-B73B-540596706379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43FE55D8-0453-4EEA-BCDD-21CFF2F3D610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FE55D8-0453-4EEA-BCDD-21CFF2F3D610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FE55D8-0453-4EEA-BCDD-21CFF2F3D610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FE55D8-0453-4EEA-BCDD-21CFF2F3D610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C7F0B75-6ED2-4FCB-BCA6-FCDACD6ED405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C7F0B75-6ED2-4FCB-BCA6-FCDACD6ED405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C7F0B75-6ED2-4FCB-BCA6-FCDACD6ED405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C7F0B75-6ED2-4FCB-BCA6-FCDACD6ED405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
