@@ -41,7 +41,7 @@ namespace Kengic.Opns.Universal
         /// </summary>
         private static DeviceItemComposition _deviceItemComposition { get; set; }
 
-        public static void Import(MenuSelectionProvider<DeviceItem> menuSelectionProvider)
+        public static void Import_Execution(MenuSelectionProvider<DeviceItem> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             using (ExclusiveAccess exclusiveAccess = _tiaPortal.ExclusiveAccess("导入设备组态中..."))
@@ -84,7 +84,7 @@ namespace Kengic.Opns.Universal
             }
         }
 
-        public static void Hardware(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
+        public static void Hardware_Execution(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
         {
             //新建一个DataBaseForm框体
             DataBaseForm dataBaseForm = new DataBaseForm();
@@ -102,7 +102,7 @@ namespace Kengic.Opns.Universal
             dataBaseForm.ShowDialog(Command.UI.Top());
         }
 
-        public static void ExportNetworkInfo(MenuSelectionProvider<Project> menuSelectionProvider)
+        public static void ExportNetworkInfo_Execution(MenuSelectionProvider<Project> menuSelectionProvider)
         {
             StreamWriter streamWriter = null;
             List<string> attributeInfo = null;

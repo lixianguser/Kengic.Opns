@@ -14,7 +14,7 @@ namespace Kengic.Opns.Universal
     {
         private static TiaPortal _tiaPortal => AddInProvider._tiaPortal;
 
-        public static void Number(MenuSelectionProvider<PlcBlock> menuSelectionProvider)
+        public static void Number_Execution(MenuSelectionProvider<PlcBlock> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             plcTarget.GoOffline();
@@ -56,7 +56,7 @@ namespace Kengic.Opns.Universal
             }
         }
 
-        public static void Assignment(MenuSelectionProvider<InstanceDB> menuSelectionProvider)
+        public static void Assignment_Execution(MenuSelectionProvider<InstanceDB> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             //TODO 获取PLC程序中所有语言为plcBlock.ProgrammingLanguage.ProDiag
@@ -91,7 +91,7 @@ namespace Kengic.Opns.Universal
             }
         }
 
-        public static void SetRetain(MenuSelectionProvider<DataBlock> menuSelectionProvider)
+        public static void SetRetain_Execution(MenuSelectionProvider<DataBlock> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             using (ExclusiveAccess exclusiveAccess = _tiaPortal.ExclusiveAccess("设置块保持特性..."))

@@ -13,7 +13,7 @@ namespace Kengic.Opns.Universal
     {
         private static TiaPortal _tiaPortal => AddInProvider._tiaPortal;
 
-        public static void Import(MenuSelectionProvider<PlcTagTableSystemGroup> menuSelectionProvider)
+        public static void Import_Execution(MenuSelectionProvider<PlcTagTableSystemGroup> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             using (ExclusiveAccess exclusiveAccess = _tiaPortal.ExclusiveAccess("导入中..."))

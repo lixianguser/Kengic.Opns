@@ -73,7 +73,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                DevicesAndNetworks.Import(menuSelectionProvider);
+                DevicesAndNetworks.Import_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -92,7 +92,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                DevicesAndNetworks.Hardware(menuSelectionProvider);
+                DevicesAndNetworks.Hardware_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -111,7 +111,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                DevicesAndNetworks.ExportNetworkInfo(menuSelectionProvider);
+                DevicesAndNetworks.ExportNetworkInfo_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -134,7 +134,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                PlcTags.Import(menuSelectionProvider);
+                PlcTags.Import_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -157,7 +157,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Tools.Export(menuSelectionProvider);
+                Tools.Export_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -176,7 +176,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Tools.Import(menuSelectionProvider);
+                Tools.Import_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -195,7 +195,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Tools.PlcImportScada(menuSelectionProvider);
+                Tools.PlcImportScada_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -214,7 +214,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Tools.HmiImportScada(menuSelectionProvider);
+                Tools.HmiImportScada_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -237,7 +237,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Property.Number(menuSelectionProvider);
+                Property.Number_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -256,7 +256,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Property.Assignment(menuSelectionProvider);
+                Property.Assignment_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {
@@ -275,7 +275,7 @@ namespace Kengic.Opns.Universal
 #endif
             try
             {
-                Property.SetRetain(menuSelectionProvider);
+                Property.SetRetain_Execution(menuSelectionProvider);
             }
             catch (Exception ex)
             {

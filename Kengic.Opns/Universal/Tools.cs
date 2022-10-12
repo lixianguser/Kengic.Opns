@@ -14,7 +14,7 @@ namespace Kengic.Opns.Universal
     {
         private static TiaPortal _tiaPortal => AddInProvider._tiaPortal;
         
-        public static void Export(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
+        public static void Export_Execution(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             using (ExclusiveAccess exclusiveAccess = _tiaPortal.ExclusiveAccess("导出中..."))
@@ -45,7 +45,7 @@ namespace Kengic.Opns.Universal
             }
         }
 
-        public static void Import(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
+        public static void Import_Execution(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -80,7 +80,7 @@ namespace Kengic.Opns.Universal
             }
         }
 
-        public static void PlcImportScada(MenuSelectionProvider<InstanceDB> menuSelectionProvider)
+        public static void PlcImportScada_Execution(MenuSelectionProvider<InstanceDB> menuSelectionProvider)
         {
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
             using (ExclusiveAccess exclusiveAccess = _tiaPortal.ExclusiveAccess("PLC导入SCADA..."))
@@ -103,7 +103,7 @@ namespace Kengic.Opns.Universal
             }
         }
 
-        public static void HmiImportScada(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
+        public static void HmiImportScada_Execution(MenuSelectionProvider<IEngineeringObject> menuSelectionProvider)
         {
             //TODO 触摸屏导入SCADA
             PlcTarget plcTarget = new PlcTarget(menuSelectionProvider.GetSelection());
